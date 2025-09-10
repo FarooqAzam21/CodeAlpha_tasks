@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image Gallery</title>
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Responsive Image Gallery</h1>
+
+  <!-- Filter Buttons -->
+   <div class="filter-container">
+    <label for="category">Category:</label>
+    <select id="category">
+      <option value="all">All</option>
+      <option value="cricketer">Cricketer</option>
+      <option value="city">City</option>
+      <option value="nature">Nature</option>
+      <option value="animal">Animal</option>
+    </select>
+    <input type="text" id="search" placeholder="Search Image...">
+  </div>
+  <!-- Gallery -->
+  <div class="gallery">
+    <div class="gallery-item nature"><img src="https://picsum.photos/id/1015/600/400" alt="Nature"><p>Nature</p></div>
+    <div class="gallery-item animals"><img src="https://picsum.photos/id/1025/600/400" alt="Animals"><p>Animals</p></div>
+    <div class="gallery-item city"><img src="https://picsum.photos/id/1035/600/400" alt="City"><p>City</p></div>
+    <div class="gallery-item nature"><img src="https://picsum.photos/id/1043/600/400" alt="Nature"><p>Nature</p></div>
+    <div class="gallery-item animals"><img src="https://picsum.photos/id/1062/600/400" alt="Animals"><p>Animals</p></div>
+    <div class="gallery-item city"><img src="https://picsum.photos/id/1076/600/400" alt="City"><p>City</p></div>
+    <div class="gallery-item cricketer"><img src="Virat kholi.jpg" alt="Cricketer"><p>Cricketer</p></div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <span class="prev">&#10094;</span>
+    <img id="lightbox-img" src="" alt="">
+    <span class="next">&#10095;</span>
+  </div>
+
+  <!-- Link JS -->
+  <script src="script.js"></script>
+</body>
+</html>
