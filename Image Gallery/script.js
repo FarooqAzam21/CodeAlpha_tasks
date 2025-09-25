@@ -6,7 +6,6 @@ const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
 let currentIndex = 0;
 
-// Open Lightbox
 galleryItems.forEach((img, index) => {
   img.addEventListener("click", () => {
     lightbox.style.display = "flex";
@@ -15,12 +14,11 @@ galleryItems.forEach((img, index) => {
   });
 });
 
-// Close Lightbox
+
 closeBtn.addEventListener("click", () => {
   lightbox.style.display = "none";
 });
 
-// Next & Prev
 function showImage(index) {
   if (index < 0) index = galleryItems.length - 1;
   if (index >= galleryItems.length) index = 0;
@@ -31,17 +29,15 @@ function showImage(index) {
 nextBtn.addEventListener("click", () => showImage(currentIndex + 1));
 prevBtn.addEventListener("click", () => showImage(currentIndex - 1));
 
-// ------------------ FILTER -------------------
+
 const filterSelect = document.getElementById("category");
 const searchInput = document.getElementById("search");
-const galleryBoxes = document.querySelectorAll(".gallery-item"); // ✅ parent div select karo
-
-// Filter by category
+const galleryBoxes = document.querySelectorAll(".gallery-item"); 
 filterSelect.addEventListener("change", () => {
   filterGallery();
 });
 
-// Search by product name
+
 searchInput.addEventListener("keyup", () => {
   filterGallery();
 });

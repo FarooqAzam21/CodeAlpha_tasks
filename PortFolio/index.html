@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Farooq Azam — Portfolio</title>
+  <meta name="description" content="Portfolio of Farooq Azam — web developer. Projects, skills, contact and education." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="#home">Muhammad Farooq Azam</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-list" id="navList">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <h1>Hi, I'm <span class="accent">Farooq Azam</span></h1>
+          <p class="lead">Web developer • React & JavaScript • Building usable and beautiful web experiences.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-media reveal">
+          <img src="C:\xampp3\htdocs\CodeAlpha_tasks\PortFolio\images\WhatsApp Image 2025-09-26 at 01.26.06_6306fdd4.jpg" alt="image" class="avatar">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container reveal">
+        <h2>About Me</h2>
+        <p>I am a motivated web developer focusing on front-end development, UI/UX and building performant React apps. I enjoy turning ideas into working products and learning new tools everyday.</p>
+        <div class="about-cards">
+          <div class="card">
+            <h3>Experience</h3>
+            <p>Internship at CodeAlpha • Frontend projects • Team collaboration</p>
+          </div>
+          <div class="card">
+            <h3>Tools</h3>
+            <p>HTML • CSS • JavaScript • React • Git • VS Code</p>
+          </div>
+          <div class="card">
+            <h3>Availability</h3>
+            <p>Open to internships and freelance front-end work</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2 class="reveal">Projects</h2>
+        <p class="muted reveal">Selected projects — click to view live or source code.</p>
+
+        <div class="projects-grid">
+          <!-- Project card -->
+          <article class="project-card reveal">
+            <img src="C:\xampp3\htdocs\CodeAlpha_tasks\PortFolio\images\image.png" alt="Project thumbnail">
+            <div class="project-body">
+              <h3>Image Gallery</h3>
+              <p>Responsive gallery with category filter, search and lightbox.</p>
+              <div class="project-links">
+                <a class="btn small" href="https://github.com/FarooqAzam21/CodeAlpha_tasks/commit/17b48b4a3d01cf8feffd22793c689fc0c45c48ed" target="_blank" rel="noopener">Live</a>
+                <a class="btn small ghost" href="https://github.com/FarooqAzam21/CodeAlpha_tasks/commit/17b48b4a3d01cf8feffd22793c689fc0c45c48ed" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <img src="C:\xampp3\htdocs\CodeAlpha_tasks\PortFolio\images\project.PNG" alt="Project thumbnail">
+            <div class="project-body">
+              <h3>Music Player (MelodyBox)</h3>
+              <p>Custom audio player with playlists, autoplay and progress controls.</p>
+              <div class="project-links">
+                <a class="btn small" href="#" target="_blank" rel="noopener">Live</a>
+                <a class="btn small ghost" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container reveal">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill"><strong>HTML</strong><small>Expert</small></div>
+          <div class="skill"><strong>CSS</strong><small>Advanced</small></div>
+          <div class="skill"><strong>JavaScript</strong><small>Advanced</small></div>
+          <div class="skill"><strong>React</strong><small>Intermediate</small></div>
+          <div class="skill"><strong>Git</strong><small>Intermediate</small></div>
+          <div class="skill"><strong>UI/UX</strong><small>Intermediate</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section alt">
+      <div class="container reveal">
+        <h2>Education</h2>
+        <div class="education-list">
+          <div class="edu">
+            <h3>Bachelor in Computer Engineering</h3>
+            <p>Sir Syed University of Engineering and Tecnology— Expected Graduation: August 2026</p>
+          </div>
+          <div class="edu">
+            <h3>Relevant Coursework</h3>
+            <p>DBMS, Embedded Systems, Algorithms, Web Development</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container reveal">
+        <h2>Contact</h2>
+        <p class="muted">Want to collaborate? Send me a message.</p>
+
+        <form id="contactForm" class="contact-form" action="mailto:your.email@example.com" method="post" enctype="text/plain">
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <textarea id="message" name="message" rows="5" placeholder="Message..." required></textarea>
+          <div class="form-row">
+            <button type="submit" class="btn">Send Email</button>
+            <button type="button" class="btn ghost" id="downloadCV">Download CV</button>
+          </div>
+        </form>
+
+        <div class="contact-info">
+          <p>Email: <a href="azamfarooq891@gmail.com">azamfarooq891@gmail.com</a></p>
+          <p>Location: Karachi, Pakistan</p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/farooq-azam-121342274/" target="_blank">linkedin.com/pk/Farooq Azam</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Farooq Azam — Built with ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

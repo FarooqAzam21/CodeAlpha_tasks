@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    
+    <aside class="sidebar">
+      <h1 class="logo">🎵 MyPlayer</h1>
+      <nav>
+        <a href="#" class="active">🏠 Home</a>
+        <a href="#">📂 Library</a>
+      </nav>
+    </aside>
+
+    
+    <main class="content">
+      <h2>Playlist</h2>
+
+      
+      <input type="text" id="searchBox" placeholder="Search song..." />
+
+      <ul id="playlist" class="playlist"></ul>
+    </main>
+  </div>
+
+  
+  <footer class="player-bar">
+    <div class="track-info">
+      <div class="cover" id="cover"></div>
+      <div>
+        <h3 id="title">Title</h3>
+        <p id="artist">Artist</p>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="prev">⏮</button>
+      <button id="play">▶️</button>
+      <button id="next">⏭</button>
+    </div>
+
+    <div class="progress">
+      <span id="current-time">0:00</span>
+      <input id="progress" type="range" min="0" max="100" value="0">
+      <span id="duration">0:00</span>
+    </div>
+
+    <div class="extras">
+      🔊 <input id="volume" type="range" min="0" max="1" step="0.01" value="1">
+      <label><input id="autoplay" type="checkbox"> Autoplay</label>
+    </div>
+  </footer>
+
+  <audio id="audio"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
